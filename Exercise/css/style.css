@@ -1,0 +1,217 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald-Regular.ttf");
+}
+
+:root {
+  --primary-color: #1971d4;
+  --secondary-color: #1d252c;
+  --dark: #666666;
+  --white: #fff;
+  --semi-dark: #8f8f8f;
+  --light-dark: #f0f0f0;
+  --fs-1: 3rem;
+  --fs-2: 2rem;
+  --fs-3: 1.5rem;
+  --fs-4: 1rem;
+}
+
+* {
+  font-family: "Oswald", sans-serif;
+}
+a {
+  font-size: var(--fs-2) !important;
+}
+.btn-primary {
+  background-color: var(--primary-color) !important;
+}
+
+/* NAVBAR START SECTION */
+.navbar {
+  margin-bottom: 0 !important;
+}
+.navbar-button {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+}
+.navbar-button .icon-bar {
+  background-color: var(--white);
+}
+.navbar-header a {
+  display: inline-block;
+  padding-left: 1rem;
+}
+.nav li a {
+  color: var(--secondary-color) !important;
+}
+.nav li a:hover {
+  color: var(--primary-color) !important;
+}
+/* NAVBAR END SECTION */
+
+/* HERO START SECTION */
+#hero {
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#hero .hero-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+}
+#hero .hero__title,
+.hero__description,
+.hero__link {
+  color: var(--white) !important;
+}
+#hero .hero__link:hover {
+  color: var(--secondary-color) !important;
+  background-color: var(--white) !important;
+  transition: all 0.5s;
+}
+/* HERO END SECTION */
+
+/* INFOBOX START SECTION */
+#infoBox .box {
+  border: 2px solid var(--light-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 25vh;
+  padding: 1rem;
+}
+#infoBox .box:hover {
+  background-color: var(--primary-color);
+  transition: all 0.5s;
+  color: var(--white);
+}
+#infoBox .box:hover a {
+  color: var(--white) !important;
+  transition: all 0.5s;
+}
+/* INFOBOX END SECTION */
+
+/* CONTENT START SECTION */
+#content {
+  color: var(--white);
+}
+#content .content__heading {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+#content .content__heading--item {
+  display: flex;
+  gap: 1rem;
+}
+#content .content__listContainer {
+  display: flex;
+  padding: 1rem;
+  font-size: var(--fs-2);
+}
+#content .content__link {
+  color: var(--white) !important;
+}
+#content .content__link:hover {
+  color: var(--secondary-color) !important;
+  background-color: var(--white) !important;
+  transition: all 0.5s;
+}
+#content .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#content .content__headlineTitle {
+  padding: 1rem;
+  margin: 0;
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+#content .content-col {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+#content .content__background {
+  background: url("../images/crosstrek12.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 454px;
+  background-color: var(--white);
+}
+/* CONTENT END SECTION */
+
+/* CTA RECOMMENDED START SECTION */
+
+#cta-recommend {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/crosstrek2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#cta-recommend .cta__title,
+.cta__description,
+.cta__link {
+  color: var(--white) !important;
+}
+#cta-recommend .cta__link:hover {
+  color: var(--secondary-color) !important;
+  background-color: var(--white) !important;
+  transition: all 0.5s;
+}
+
+/* CTA RECOMMENDED END SECTION */
+
+/* CTA START SECTION */
+#cta .btn__link {
+  color: var(--white) !important;
+}
+/* CTA END SECTION */
+
+/* EXPERIENCE START SECTION */
+#experience .content__headlineTitle {
+  padding: 1rem;
+  margin: 0;
+  color: var(--white);
+}
+#experience .card__link {
+  color: var(--white) !important;
+}
+#experience .content__background {
+  background: url("../images/crosstrek12.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 454px;
+  background-color: var(--white);
+}
+#experience .card {
+  border-radius: 15px;
+  background-color: var(--light-dark);
+}
+#experience .card__title {
+  margin: 0 0 1rem 0;
+}
+#experience .card__link:hover {
+  color: var(--secondary-color) !important;
+  background-color: var(--white) !important;
+  transition: all 0.5s;
+}
+/* EXPERIENCE END SECTION */
+
+/* FOOTER START SECTION */
+#footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+#footer a {
+  color: var(--semi-dark) !important;
+  font-size: var(--fs-3) !important;
+}
+/* FOOTER END SECTION */
